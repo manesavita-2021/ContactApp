@@ -1,0 +1,30 @@
+.card-header{
+  text-align: center;
+  background-color:slategrey;
+  text-shadow: black;
+  font-family: cursive;
+}
+
+.card-body{
+  width: 100%;
+  height: fit-content;
+  background-color:silver;
+  text-align:justify;
+  padding:1%
+}
+
+.card{
+  background-color: black;
+}
+.main{
+ padding-left: 2%;
+  padding-top: 1%;
+  padding-right: 2%;
+  padding-bottom: 1%;
+  background-origin:content-box;
+  background-color:brown;
+  font-family:Arial, Helvetica, sans-serif;
+
+}
+
+

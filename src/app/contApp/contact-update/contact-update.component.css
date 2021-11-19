@@ -1,0 +1,22 @@
+.container-md{
+  width: 80%;
+  padding:0%;
+
+}
+
+.card{
+  background-color: darkgray;
+  font-family:monospace;
+
+}
+.card-header{
+  background-color:dimgrey;
+  text-align:center;
+  font-family:cursive;
+  color:honeydew
+}
+
+.main{
+  background-origin:padding-box;
+  background-color:whitesmoke;
+  }

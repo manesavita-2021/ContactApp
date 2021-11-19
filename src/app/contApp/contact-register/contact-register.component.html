@@ -1,0 +1,41 @@
+<div class="main">
+<div class="container-md">
+<div class="card">
+  <h3><div class="card-header">Register</div></h3>
+  <div class="card-body">
+    <form>
+    <div class="mb-2">
+        <label for="exampleInputEmail1" class="form-label">Name</label>
+        <input type="text" class="form-control" [(ngModel)]="userobj.userName" name="userName" placeholder="Enter Name">
+      </div>
+      <div class="mb-2">
+        <label for="exampleInputEmail1" class="form-label">Email Id</label>
+        <input type="text" class="form-control" [(ngModel)]="userobj.useremail" name="useremail" placeholder="Enter email">
+      </div>
+      <div class="mb-2">
+        <label for="exampleInputEmail1" class="form-label">City</label>
+        <input type="text" class="form-control" [(ngModel)]="userobj.userCity" name="userCity" placeholder="Enter city">
+      </div>
+      <div class="mb-2">
+        <label for="exampleInputEmail1" class="form-label">State</label>
+        <select class="form-control" [(ngModel)]="userobj.userState" name="userState" >
+        <option value>Select</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Goa">Goa</option>
+      </select>
+    </div>
+    <div class="mb-2">
+      <label for="exampleInputEmail1" class="form-label">Mobile No</label>
+      <input type="text" class="form-control" [(ngModel)]="userobj.userMobile" name="userMobile" placeholder="Enter 10 digits number">
+    </div>
+
+    <button type="button" (click)="saveData()" class="btn btn-secondary btn-block">Save </button>
+
+    </form>
+
+  </div>
+
+</div>
+</div>
+</div>

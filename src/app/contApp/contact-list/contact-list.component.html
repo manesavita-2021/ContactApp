@@ -1,0 +1,38 @@
+<div class="main">
+  <div class="card">
+    <H4> <div class="card-header">CONTACT LIST</div></H4>
+    <div class="card-body">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>SR NO</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>CITY</th>
+            <th>STATE</th>
+            <th>MOBILE</th>
+            <th>ACTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of contactList; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ user.userName }}</td>
+            <td>{{ user.useremail }}</td>
+            <td>{{ user.userCity }}</td>
+            <td>{{ user.userState }}</td>
+            <td>{{ user.userMobile }}</td>
+            <td>
+              <button
+                class="btn btn-success"
+                [routerLink]="['/contactUpdate', user.userId]"
+              >
+                Update
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
